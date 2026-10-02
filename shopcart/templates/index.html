@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopCart | Shop</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js" defer></script>
+</head>
+<body data-page="shop">
+<header><a class="brand" href="/">shop<span>cart</span><small>THE EVERYDAY STORE</small></a>
+<nav aria-label="Main navigation"><a href="/">Shop</a><a href="/orders">My orders</a><a class="cart-link" href="/cart">Cart <span id="cart-count">0</span></a></nav></header>
+<div class="notice">A student demo store · Sample products · No real payments</div>
+<main>
+<section class="hero"><div><p class="eyebrow">SMALL FINDS. EVERYDAY JOY.</p><h1>Your daily essentials,<br>a little more affordable.</h1><p>Discover useful picks for your desk, college and everyday life.</p><a class="button" href="#catalog">Explore the collection →</a></div><div class="hero-art" aria-hidden="true">🎧 <span>🎒</span></div></section>
+<section id="catalog"><div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your next favourite</h2></div><span id="result-count"></span></div>
+<div class="filters"><label>Search products<input id="search" type="search" placeholder="Try headphones or notebook..."></label><label>Category<select id="category"><option value="">All categories</option></select></label><label>Sort by<select id="sort"><option value="default">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label><label class="check"><input id="wishlist-only" type="checkbox"> Wishlist only</label></div>
+<div id="products" class="product-grid"><p>Loading products...</p></div></section>
+<dialog id="details"><button class="close" id="close-details" aria-label="Close product details">×</button><div id="detail-icon" class="detail-icon"></div><h2 id="detail-name"></h2><p id="detail-description"></p><p id="detail-price" class="price"></p><button id="detail-add">Add to cart</button></dialog></main><p id="message" role="status" aria-live="polite"></p>
+<footer>ShopCart · Built with Python, HTML, CSS & JavaScript</footer></body></html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopCart | Your cart</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js" defer></script>
+</head>
+<body data-page="cart">
+<header><a class="brand" href="/">shop<span>cart</span><small>THE EVERYDAY STORE</small></a>
+<nav aria-label="Main navigation"><a href="/">Shop</a><a href="/orders">My orders</a><a class="cart-link" href="/cart">Cart <span id="cart-count">0</span></a></nav></header>
+<div class="notice">A student demo store · Sample products · No real payments</div>
+<main><p class="eyebrow">YOUR PICKS</p><h1>Shopping cart</h1><p>Check your items before placing a demo order.</p><div class="cart-layout"><section id="cart-items" aria-label="Cart items"></section><aside class="summary"><h2>Order summary</h2><p class="total-line">Total <strong id="cart-total">₹0</strong></p><p>No delivery charges in this demo.</p><form id="checkout"><label>Your name<input name="customer" required minlength="2" maxlength="80" autocomplete="name"></label><label>Demo delivery address<textarea name="address" required minlength="10" maxlength="300" rows="3" placeholder="Use a sample address for this demo"></textarea></label><p class="muted">Demo checkout only. No payment or shipment.</p><button id="place-order" type="submit">Place demo order</button></form></aside></div></main><p id="message" role="status" aria-live="polite"></p>
+<footer>ShopCart · Built with Python, HTML, CSS & JavaScript</footer></body></html>
